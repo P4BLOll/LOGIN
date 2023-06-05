@@ -1,0 +1,27 @@
+body{
+    background-color: #3E3E3E;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+}
+
+.col-lado2{
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(170, 170, 170, 0.11);
+    box-shadow: -19px 25px 37px rgba(0, 0, 0, 0.25);
+}
+
+.col-lado1{
+    height: 100vh;
+    width: 100%;
+}
+
+.col-lado2 img{
+    margin-left: 20%;
+    margin-top: 18%;
+    }
