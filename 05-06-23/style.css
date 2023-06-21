@@ -3,7 +3,7 @@
 
 body{
     
-    background-color: #292929;
+    background-color: #191919;
     margin: 0;
 }
 
@@ -26,12 +26,11 @@ button{
 }
 
 #logo{
-    
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 13.5%;
-    width: 10%;
-    height: 10%;
+    width: 90px;
+    height: 90px;
+}
+.logo{
+    text-align: center;
 }
 
 .voltar button{
@@ -41,7 +40,7 @@ button{
     width: 90px;
     height: 40px;
 
-    background: #C33633;
+    background: #e73a39;
     border-radius: 10px;
 
     transform: translate(-50%, -50%);
@@ -95,7 +94,7 @@ button{
     color: white;
     font-size: 25px;
 
-    margin-top: 9%;
+    margin-top: 3%;
   }
   
 .email{
@@ -146,14 +145,19 @@ button{
 }
 
 #esqueceu{
+    text-align: center;
     text-decoration: none;
     color: white;
     font-size: 13px;
     font-family: 'Poppins';
     font-weight: 200;
-    margin-left: 60%;
     margin-top: 2px;
 
+}
+
+.esqueceu{
+    margin-top: 3%;
+    text-align: center;
 }
 
 
@@ -174,12 +178,12 @@ div.entrar{
     width: 25%;
     height: 100%;
     border: 0;
-    background: #C33633;
+    background: #e73a39;
     border-radius: 10px;
 }
   
 p#cadastrar{
-    margin-top: 6%;
+    margin-top: 3%;
     text-align: center;
     color: white;
     font-size: 15px;
@@ -235,7 +239,7 @@ p#cadastrar{
 .redes a button{
  
     text-align: center;
-    background-color: #C33633;
+    background-color: #e73a39;
     border: 0;
     border-radius: 10px;
     width: 40px;
@@ -246,4 +250,185 @@ p#cadastrar{
 img.logos{
     width: 24px;
     height: 24px;
+}
+
+@media screen and (max-width: 1400px){
+
+}
+
+@media screen and (max-width: 1080px) {
+    .row{
+        display: inline;
+        flex-direction: column;
+    }
+
+    .col-lado2{
+        display: none;
+    }
+
+    .redes a button{
+         
+    }
+
+
+}
+
+@media screen and (max-width: 590px){
+
+
+      
+    .email{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-top: 3%;
+        height: 8%;
+    }
+    .email input{
+        width: 85%;
+        height: 100%;
+        background-color: #3E3636;
+        border: 0;
+        border-radius: 10px;
+    }
+    
+    .email label{
+        margin-left: 1%;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Poppins';
+        font-weight: 200;
+    }
+      
+    .senha{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-top: 4%;
+        height: 8%;
+    }
+      
+    .senha input{
+        width: 85%;
+        height: 100%;
+        background-color: #3E3636;
+        border: 0;
+        border-radius: 10px;
+    }
+    
+    .senha label{
+        margin-left: 1%;
+        color: white;
+        font-size: 16px;
+        font-family: 'Poppins';
+        font-weight: 200;
+    }
+    
+    #esqueceu{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        font-family: 'Poppins';
+        font-weight: 200;
+        margin-top: 2px;
+    
+    }
+    
+    .esqueceu{
+        margin-top: 8%;
+        text-align: center;
+    }
+    
+    
+    div.entrar{
+        text-align: center;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        flex-direction: column;
+        width: 100%;
+        height: 6%;
+    }
+    
+    .entrar button{
+        color: white;
+        font-size: 17px;
+        font-family: 'Poppins';
+        font-weight: 300;
+        width: 40%;
+        height: 100%;
+        border: 0;
+        background: #e73a39;
+        border-radius: 10px;
+    }
+      
+    p#cadastrar{
+        margin-top: 8%;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-family: 'Poppins';
+        font-weight: 200;
+    }
+    
+    
+    .ou p{
+        color: white;
+        text-align: center;
+        position: relative;
+      }
+      
+    .ou p::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 23%;
+        height: 1px;
+        background-color: white;
+        margin-left: 20%;
+    
+    
+      }
+    .ou p::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 23%;
+        height: 1px;
+        background-color: white;
+        margin-right: 20%;
+      }
+      
+    .ou p::before {
+        left: 0;
+      }
+      
+    .ou p::after {
+        right: 0;
+      }
+    
+    
+    .redes{
+        margin-top: 3%;
+        text-align: center;
+        margin-left: 25%;
+        width: 50%;
+    
+    }
+    
+    .redes a button{
+     
+        text-align: center;
+        background-color: #e73a39;
+        border: 0;
+        border-radius: 10px;
+        width: 33px;
+        height: 33px;
+        margin: 2%;
+    }
+    
+    img.logos{
+        width: 19px;
+        height: 19px;
+    }
 }
